@@ -1,5 +1,5 @@
 ## Ambari Metric Server Tools
-----
+
 #### 1) Count the metric types received by AMS (ams_metrics_type_count.sh)  
 
 - Purpose: While working on AMS performance issues, one of the required information to be collected is the count of types of metrics received from various components during every iteration.  
@@ -32,5 +32,4 @@ Sample Output :
     timeline_metric_store_watcher : 1  
 
 - Note : This output tells us the number of different types of metrics that are received from various components. In this case, HiveMetastore was sending 682278 types of metrics at every interval and the AMS performance issue was resolved by removing hive table level metrics.  
-
 ----
