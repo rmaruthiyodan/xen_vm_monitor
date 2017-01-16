@@ -31,4 +31,5 @@ Sample Output :
     timeline_metric_store_watcher : 1  
 
 - Note : This output tells us the number of different types of metrics that are received from various components. In this case, HiveMetastore was sending 682278 types of metrics at every interval and the AMS performance issue was resolved by removing hive table level metrics.  
+
 ----
