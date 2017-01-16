@@ -2,8 +2,7 @@
 
 #### 1) Count the metric types received by AMS (ams_metrics_type_count.sh)  
 
-- Purpose: While working on AMS performance issues, one of the required information to be collected is the count of types of metrics received from various components during every iteration.  
-    The script accepts AMS metrics metadata as input, in json format and produces an output that tells us the count of different types of metrics that are received from various HDP components. Ref: https://hortonworks.jira.com/browse/BUG-71434
+- Purpose: One of the possible reasons for repeated AMS HBase crashes and Slow AMS performance is that the AMS Collector and AMS-HBase processes are overwhelmed with very high rate of incoming metrics data. The script can be helpful to find the count of different types of metrics that are received from various HDP components. Ref: https://hortonworks.jira.com/browse/BUG-71434  
 
 - Input  : Capture AMS metadata, using the following AMS API and redirect to a file:  
     curl http://\<AMS-Collector-Host\>:6188/ws/v1/timeline/metrics/metadata > ams_meta.out
